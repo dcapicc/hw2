@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <div class="md:flex">
+        <img class="md:m-4 w-1/4 rounded-xl" src="Barbell Logo.jpeg">       
+
+        <h1 class="md:my-auto font-bold text-4xl text-red-600">Welcome to The Inferno!</h1>
+
+    </div>
+
+    <!-- Site Navigation -->
+    <div class="md:flex">
+        <div class="md:w-1/3 mx-3 text-xl border-2 border-red-800 rounded text-center"><a href="training.html">Personal Training</a></div>
+        <div class="md:w-1/3 mx-3 text-xl border-2 rounded border-red-800 text-center"><a href="trainingrooms.html">Individual Training Rooms</a></div>
+        <div class="md:w-1/3 mx-3 text-xl border-2 rounded border-red-800 text-center"><a href="aboutus.html">Meet Our Team</a></div>
+
+    </div>
+
+    <div class="md:flex">
+        <div class="md:mx-4 w-1/4">
+          <div>
+            <h2 class="text-center font-semibold">Platform Stations</h2>
+            <div>
+              <img src="Squat Racks.jpeg" class="rounded">
+            </div>
+            <div>Our facilities include 10 state of the art platform workout stations.</div>
+            
+          </div>
+        </div>
+
+        <div class="md:mx-4 w-1/4">
+            <div>
+              <h2 class="text-center font-semibold">Free Weights</h2>
+              <div>
+                <img src="Free weights.jpeg" class="rounded">
+              </div>
+              <div>Free weights are available up to 150 lbs.</div>
+            </div>
+        </div>
+
+        <div class="md:mx-4 w-1/4">
+            <div>
+              <h2 class="text-center font-semibold">Indoor Turf</h2>
+              <div>
+                <img src="Gym turf area.jpeg" class="rounded">
+              </div>
+              <div>30 yards of indoor turf area provides plenty of room for use of sleds, ropes, tires etc.</div>
+            </div>
+        </div>
+
+        <div class="md:mx-4 w-1/4">
+            <div>
+              <h2 class="text-center font-semibold">Cardio</h2>
+              <div>
+                <img src="Cardio Area.jpeg" class="rounded">
+              </div>
+              <div>Our cardio equipment includes 15 treadmills, 15 ellipticals, 5 stair climbers and 5 rowing machines.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center font-bold">Membership Fees</div>
+    <table class="mx-auto">
+        <tr>
+            <td class="w-40 border border-red-800 text-center">Day Pass</td>
+            <td class="w-40 border border-red-800 text-center">$10</td>
+        </tr>
+        <tr>
+            <td class="w-40 border border-red-800 text-center">1 Month</td>
+            <td class="w-40 border border-red-800 text-center">$60</td>
+        </tr>
+        <tr>
+            <td class="w-40 border border-red-800 text-center">6 Months</td>
+            <td class="w-40 border border-red-800 text-center">$55 per month</td>
+        </tr>
+        <tr>
+            <td class="w-40 border border-red-800 text-center">1 Year</td>
+            <td class="w-40 border border-red-800 text-center">$50 per month</td>
+        </tr>
+    </table>
+
+    <div class="ml-4 font-bold">Interested in Joining?</div>
+    <div class="ml-4">Fill out the form below and our staff will contact you to set up a tour:</div>
+    <form>
+        <label class="block ml-4 mt-4 font-bold" for="first name">First Name:</label>
+        <input class="p-2 ml-4 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="text" id="first name" name="first name">
+      
+        <label class="block ml-4 mt-4 font-bold" for="last name">Last Name:</label>
+        <input class="p-2 ml-4 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="text" id="last name" name="last name">
+
+        <label class="block ml-4 mt-4 font-bold" for="phone">Phone:</label>
+        <input class="p-2 ml-4 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="tel" id="phone" name="phone">
+
+        <label class="block ml-4 mt-4 font-bold" for="email">Email:</label>
+        <input class="p-2 ml-4 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+        focus:border-purple-500" type="email" id="email" name="email">
+      
+        <button class="block m-4 text-white bg-red-800 rounded px-4 py-2">Submit form!</button>
+      </form>
+
+</body>
+</html>
