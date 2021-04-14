@@ -11,23 +11,27 @@
 </head>
 <body>
 
-    <div class="md:flex">
-        <img class="md:m-4 w-1/4 rounded-xl" src="Barbell Logo.jpeg">       
+  <!-- Header -->
 
-        <h1 class="md:my-auto font-bold text-4xl text-red-600">Welcome to The Inferno!</h1>
+    <div class="md:flex">
+        <div class="md:w-1/4 m-4 p-2 rounded-xl">
+          <a href="index.html"><img src="Barbell Logo.jpeg"></a>
+        </div>    
+
+        <h1 class="md:my-auto m-4 p-2 font-bold text-4xl text-red-600">Welcome to The Inferno!</h1>
 
     </div>
 
     <!-- Site Navigation -->
     <div class="md:flex">
         <div class="md:w-1/3 mx-3 text-xl border-2 border-red-800 rounded text-center"><a href="training.html">Personal Training</a></div>
-        <div class="md:w-1/3 mx-3 text-xl border-2 rounded border-red-800 text-center"><a href="trainingrooms.html">Individual Training Rooms</a></div>
+        <div class="md:w-1/3 mx-3 text-xl border-2 rounded border-red-800 text-center"><a href="trainingrooms.html">Private Training Rooms</a></div>
         <div class="md:w-1/3 mx-3 text-xl border-2 rounded border-red-800 text-center"><a href="aboutus.html">Meet Our Team</a></div>
 
     </div>
 
     <div class="md:flex">
-        <div class="md:mx-4 w-1/4">
+        <div class="md:w-1/4 m-3">
           <div>
             <h2 class="text-center font-semibold">Platform Stations</h2>
             <div>
@@ -38,7 +42,7 @@
           </div>
         </div>
 
-        <div class="md:mx-4 w-1/4">
+        <div class="md:w-1/4 m-3">
             <div>
               <h2 class="text-center font-semibold">Free Weights</h2>
               <div>
@@ -48,7 +52,7 @@
             </div>
         </div>
 
-        <div class="md:mx-4 w-1/4">
+        <div class="md:w-1/4 m-3">
             <div>
               <h2 class="text-center font-semibold">Indoor Turf</h2>
               <div>
@@ -58,7 +62,7 @@
             </div>
         </div>
 
-        <div class="md:mx-4 w-1/4">
+        <div class="md:w-1/4 m-3">
             <div>
               <h2 class="text-center font-semibold">Cardio</h2>
               <div>
@@ -89,9 +93,9 @@
         </tr>
     </table>
 
-    <div class="ml-4 font-bold">Interested in Joining?</div>
+    <div class="ml-4 font-bold text-xl">Interested in Joining?</div>
     <div class="ml-4">Fill out the form below and our staff will contact you to set up a tour:</div>
-    <form>
+    <form action="form_thanks.html">
         <label class="block ml-4 mt-4 font-bold" for="first name">First Name:</label>
         <input class="p-2 ml-4 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
         focus:border-purple-500" type="text" id="first name" name="first name">
@@ -107,6 +111,18 @@
         <label class="block ml-4 mt-4 font-bold" for="email">Email:</label>
         <input class="p-2 ml-4 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
         focus:border-purple-500" type="email" id="email" name="email">
+
+        <label class="block ml-4 mt-4 font-bold" for="preference">Preferred contact method:</label>
+        <div>
+          <div class="flex">
+            <label class="block ml-4 my-auto" for="phone_pref">Phone</label>
+            <input type="radio" id="phone_pref" name="preference" value="phone_pref" class="my-auto ml-4" checked>
+          </div>
+          <div class="flex">
+            <label class="block ml-4 my-auto" for="email_pref">Email</label>
+            <input type="radio" id="email_pref" name="preference" value="email_pref" class="my-auto ml-4" checked>
+          </div>
+        </div>  
       
         <button class="block m-4 text-white bg-red-800 rounded px-4 py-2">Submit form!</button>
       </form>
